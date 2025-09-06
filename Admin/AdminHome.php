@@ -31,23 +31,35 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>|Admin Login</title>
+  <title>Admin Login</title>
   <link rel="stylesheet" href="style.css">
+
+  
 </head>
-<body>
+<body >
+  <img  src=CoffeeShop.png alt="Coffee Cup" 
+  style="
+  position: fixed; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -1; 
+  filter: blur(4px);">
+
   <div class="container">
-    <div class="image-section"></div>
+    <div class="image-section">
+      <img src="CoffeeCup.jpg" alt="Coffee Cup" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
     <div class="login-section">
-      <h2>Login</h2>
-      <p>Admin Login</p>
-      <input type="email" placeholder="Email@gmail.com" >
-      <input type="password" placeholder="Password">
-      <p>Sign as</p>
+      <h2 style="text-align: center;">BerdeKopi POS</h2>
+      <p style ="font-size:15px;">Admin User</p>
+      <input style="font-size:15px;"type="email" placeholder="Admin">
+      <p style ="font-size:15px;">Password</p>
+      <input style = "font-size: 15px;"type="password" placeholder="Password">
+      <p style="text-align:center; margin-top:5%;font-size:15px;">Sign as</p>
       <div class="button-group">
         <button>Admin</button>  
         <button>Cashier</button>
       </div>
-      
     </div>
   </div>
 </body>
